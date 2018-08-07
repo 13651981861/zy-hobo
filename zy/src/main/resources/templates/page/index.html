@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    登录成功<span th:text="|,欢迎${user.userName}|">这里是提示,不做展示</span>
+    当前时间:<span th:text="${#dates.format(#dates.createNow(),'yyyy/MM/dd hh:mm')}"></span>
+</body>
+</html>

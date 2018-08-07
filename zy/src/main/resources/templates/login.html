@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/frame.css" rel="stylesheet" />
+    <link href="css/layout.css" rel="stylesheet" />
+</head>
+<body>
+<div class="modal-dialog" style="width:400px;">
+    <div class="modal-content">
+        <div class="modal-header" align="center">
+            <h4 class="modal-title" id="myModalLabel">登录</h4>
+        </div>
+        <div class="modal-body">
+            <form id="loginForm" name="loginForm" method="post" action="login">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-addon login_user">用户名</span> <input
+                                    type="text" class="form-control" placeholder="UserName"
+                                    id="loginUserName" name="userName" />
+                            </div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="input-group login_pwd">
+                                <span class="input-group-addon login_user">密码</span> <input
+                                    type="password" class="form-control" placeholder="PassWord"
+                                    id="loginPwd" name="passWord" />
+                            </div></td>
+                    </tr>
+                    <!--<tr>-->
+                        <!--<td>-->
+                            <!--<div class="input-group login_pwd">-->
+                                <!--<input-->
+                                        <!--type="text" class="form-control" placeholder="图片校验码"-->
+                                        <!--id="loginCodePwd" name="securitycode" />-->
+											<!--<span class="input-group-addon login_user">-->
+											<!--<a href="javascript:reloadImage('/PAFTestPlatform/checkcodeimage.jsp')"-->
+                                               <!--alt="看不清，换一张"><img src="/PAFTestPlatform/checkcodeimage.jsp" id="Verify"  style="cursor:hand;" /></a></span>-->
+                            <!--</div></td>-->
+                    <!--</tr>-->
+                </table>
+                <div class="modal-footer" align="center">
+                    <div align="center">
+                        <button type="submit" class="btn btn-primary login_box" >登录</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
