@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div>
+        用户姓名:<input th:id="${dto.name}" th:name="${dto.name}" th:value="${dto.name}">
+        <br/>
+        用户ID:<input th:value="${dto.id}">
+        <br/>
+        创建时间:<input th:value="${dto.createDate}">格式化后:<input th:value="${#dates.format(dto.createDate,'yyyy-MM-dd')}">
+    </div>
+    <br/>
+    <div th:object="${dto}">
+        <input th:value="*{name}">
+    </div>
+</body>
+</html>
