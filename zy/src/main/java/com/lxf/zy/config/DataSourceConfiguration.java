@@ -18,7 +18,6 @@ public class DataSourceConfiguration {
     @ConfigurationProperties(prefix = "spring.datasource")
     public DataSource readDataSource(){
         DruidDataSource source = new DruidDataSource();
-
         return  source;
     }
 }
