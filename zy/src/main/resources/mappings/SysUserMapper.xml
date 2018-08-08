@@ -149,7 +149,7 @@
     from sys_user
   </select>
 
-  <select id="info" parameterType="com.lxf.zy.model.SysUser"  resultType="com.lxf.zy.model.SysUser">
+  <select id="info" parameterType="com.lxf.zy.model.SysUser"  resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List"/>
     from sys_user a

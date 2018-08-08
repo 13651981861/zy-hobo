@@ -40,12 +40,12 @@ public class UserController {
         sysUser.setUserName(userName);
         sysUser.setPassWord(passWord);
         SysUser loginUser = sysUserService.info(sysUser);
-        if (loginUser != null){
-            request.getSession().setAttribute("currentUser",sysUser);
-            request.setAttribute("user",sysUser);
+        if (loginUser != null && loginUser.getUserName().equals(userName)){
+            request.getSession().setAttribute("currentUser",loginUser);
+            request.setAttribute("user",loginUser);
             return "page/index";
         }
-        return "page/login";
+        return "login";
     }
 
 

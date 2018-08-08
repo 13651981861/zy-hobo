@@ -6,7 +6,7 @@
 	<groupId>com.lxf</groupId>
 	<artifactId>zy</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>zy</name>
 	<description>Demo project for Spring Boot</description>
@@ -36,9 +36,16 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>compile</scope>
+		</dependency>
 
-
-
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
 
 
 		<!-- thymeleaf 模板引擎 -->
