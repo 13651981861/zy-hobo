@@ -32,6 +32,7 @@ public class UserController {
             System.out.printf("用户对象: %s 保存成功",user);
             System.out.printf("");
         }
+
         return  user;
     }
 }
