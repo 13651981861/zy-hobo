@@ -21,4 +21,10 @@ public class SysUserService extends BaseService<SysUser,SysUserMapper>{
     public SysUser info(SysUser sysUser){
         return sysUserMapper.info(sysUser);
     }
+
+    @Override
+    public int save(SysUser sysUser) {
+        sysUser.setPassWord("123456");//默认密码
+        return sysUserMapper.insert(sysUser);
+    }
 }
