@@ -3,9 +3,9 @@ spring:
     active: dev
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.5.50:3306/hobo-frame
+    url: jdbc:mysql://locahost:3306/hobo-frame
     username: root
-    password: shlefantest.com
+    password: 123456
   jpa:
     hibernate:
       ddl-auto: update
